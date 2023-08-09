@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiCloseCircleLine } from 'react-icons/ri'
+import { MdDelete } from 'react-icons/md'
 import { TiTick } from 'react-icons/ti'
 
 export default function Todo({ todos, completeTask, removeTask }) {
@@ -8,7 +8,7 @@ export default function Todo({ todos, completeTask, removeTask }) {
       <div className="todo-text">{todo.text}</div>
       <div className="icons" key={todo.id}>
         <TiTick className={todo.isComplete ? 'hide' : 'tick'} onClick={() => { completeTask(todo.id) }}></TiTick>
-        <RiCloseCircleLine className='cross' onClick={() => { removeTask(todo.id) }}></RiCloseCircleLine>
+        <MdDelete className='cross' onClick={() => { removeTask(todo.id) }}></MdDelete>
       </div>
     </div>
   ))

@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 800rem;
+  width: 300rem;
   border: 1px solid black;
-  min-height: 500rem;
+  min-height: 100rem;
   background-color: skyblue;
   border-radius: 1rem;
 }
